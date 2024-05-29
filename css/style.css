@@ -1,0 +1,148 @@
+:root {
+    --bg: #141414;
+    --bg2: #3C3C3C;
+    --laranja: #ee620c;
+}
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* Navbar */
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #000;
+    padding: 12px 16px;
+    overflow: hidden;
+}
+
+.openSide-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.openSide {
+    all: unset;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.openSide:hover {
+    color: var(--laranja);
+}
+
+.sidebarBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.sidebarMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sideButton {
+    all: unset;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebarBtn:hover {
+    color: var(--laranja);
+}
+
+.sidebarMenu span {
+    background-color: #fff;
+    width: 15px;
+    height: 3px;
+}
+
+.sidebarList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
+}
+
+.sidebarItem {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.sidebarItem:hover {
+    scale: 1.4;
+    color: var(--laranja);
+}
+
+
+
+/* Homepage */
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.equipes-content {
+    text-align: center;
+    width: 50%;
+    background-color: var(--bg2);
+    padding: 12px 16px;
+    border-radius: 12px;
+}
+
+.equipes, .equipes img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.equipes img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
