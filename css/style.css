@@ -29,7 +29,7 @@ main {
     gap: 100px;
 }
 
-.home, .sobre, .faca-parte, .patrocinios, .servidores, .equipe {
+.home, .sobre, .faca-parte, .patrocinios, .servidores, .equipe, .faq, .contatos {
     margin: 150px 0;
 }
 
@@ -552,4 +552,58 @@ dialog {
 
 .redes-sociais li:hover {
     transform: scale(1.1);
+}
+
+
+/* F.A.Q */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-questions li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #fff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background-color: var(--laranja);
+}
+
+.faq-questions-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.desc {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.faq-questions li:hover .desc {
+    display: block;
 }
