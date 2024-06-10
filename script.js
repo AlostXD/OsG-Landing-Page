@@ -74,3 +74,39 @@ function closeModal(modalId) {
         console.error('Modal não encontrado:', modalId);
     }
 }
+
+// Lista de Membros da equipe
+
+let equipe = [{
+    nome: 'Bruno "BFshow" Felipe',
+    img: 'img/BF.webp',
+    cargo: 'CEO',
+    modalID: 'modal7'
+},
+{
+    nome: 'Luciano "Cubano" Pavan',
+    img: 'img/Cubano.webp',
+    cargo: 'CTO',
+    modalID: 'modal8'
+},
+{
+    nome: 'Vanderlei "Alost" Junio',
+    img: 'img/Alost.webp',
+    cargo: 'CCO',
+    modalID: 'modal9'
+}]
+
+let headstaffs = document.getElementById("headstaff");
+
+
+equipe.forEach(element => {
+    let hstaffmember = document.createElement("li");
+    hstaffmember.innerHTML = `
+    <a class="equipe-card-item" onclick="openModal('${element.modalID}')">
+    <img src="${element.img}" alt="${element.nome}">
+    <h2>${element.nome}</h2>
+    <p>${element.cargo}</p>
+    </a>
+    `;
+    headstaffs.appendChild(hstaffmember);
+});

@@ -29,7 +29,7 @@ main {
     gap: 100px;
 }
 
-.home, .sobre, .faca-parte, .patrocinios, .servidores {
+.home, .sobre, .faca-parte, .patrocinios, .servidores, .equipe {
     margin: 150px 0;
 }
 
@@ -457,4 +457,99 @@ dialog {
     color: #ee620c;
     font-weight: bold;
     font-size: 24px;
+}
+
+/* Equipe Headstaff */
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.equipe h1 {
+    color: var(--laranja);
+}
+
+.equipe-cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.equipe-card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--laranja);
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.equipe-card-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.equipe-card-item img {
+    width: 50%;
+    border-radius: 500px;
+}
+
+.head-staff-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.img-headstaff {
+    width: 100%;
+    padding: 40px;
+}
+
+.head-staff-member-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.head-staff-member button {
+    all: unset;
+    background-color: var(--laranja);
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    width: 50%;
+}
+
+.head-staff-member button:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes-sociais li {
+    transition: all 0.5s ease;
+}
+
+.redes-sociais li:hover {
+    transform: scale(1.1);
 }
