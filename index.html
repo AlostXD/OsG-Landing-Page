@@ -108,9 +108,48 @@
                     experiência em streaming, estamos interessados no seu entusiasmo e dedicação.</p>
                 <p>Para se candidatar ou tirar dúvidas, entre em contato através do <a href="https://osg.cx/discord">Discord</a> ou envie um e-mail para rh@osguerreiros.com</p>
                 <p><strong>Jogos incríveis e momentos épicos nos esperram. Vamos jogar juntos!</strong></p>
-                <a href="https://osg.cx/discord-recrutamento">Aplicar recrutamento</a>
+                <a href="https://osg.cx/discord-recrutamento" class="aplicar">Aplicar recrutamento</a>
             </div>
             <div class="faca-parte-image"><img src="img/Logo2.png" alt="Logo"></div>
+        </div>
+        <!-- FILEPATH: /c:/Users/Administrator/Desktop/osguerreiros/OsG-Landing-Page/index.html -->
+        <div class="patrocinios">
+            <h2>Empresas que confiam no nosso projeto!</h2>
+            <div class="patrocinadores" id="patron"></div>
+            <div class="patrocinios-footer">
+                <div class="patrocinios-btns">
+                    <button class="aplicar" onclick="openModal('modal1')">Por que ser um patrocinador?</button>
+                    <button class="aplicar" onclick="openModal('modal2')">Como apoiar a equipe?</button>
+                </div>
+            </div>
+            <h4>Para informações, esclarecimento ou solicitações envie um e-mail para comercial@osguerreiros.com</h4>
+            <dialog id="modal1" class="patreon-modal">
+                <div class="ser-patrocinador">
+                    <h2>Por que ser um patrocinador?</h2>
+                    <ol>
+                        <li>Alcançar novos clientes e lançar novos produtos e/ou serviços;</li>
+                        <li>Obtenção de vantagem competitiva e alcance de mercado;</li>
+                        <li>Aproximação com um público;</li>
+                        <li>Fidelização;</li>
+                        <li>Endomarketing;</li>
+                        <li>Divulgação da marca da empresa em nossas redes sociais, site e página da equipe na Twitch;</li>
+                        <li>Fazer utilização do potencial do Cobranding, alinhando valores de sua empresa aos valores da equipe Os Guerreiros.</li>
+                        <li>Aumentar o reconhecimento de marca de maneira orgânica através da exposição midiática;</li>
+                    </ol>
+                    <button class="aplicar" onclick="closeModal('modal1')">Fechar</button>
+                </div>
+            </dialog>
+            <dialog id="modal2" class="patreon-modal">
+                <div class="apoiar">
+                    <h2>Como apoiar a equipe?</h2>
+                    <ol>
+                        <li>Ajuda financeira, que pode ser feita por meio de doação (caso de quantias pequenas) ou patrocínio financeiro (quantias grandes);</li>
+                        <li>Fornecimento de produtos ou serviços;</li>
+                        <p>Para informações, esclarecimento ou solicitações de parceria envie um e-mail para comercial@osguerreiros.com ou entre em contato pelo <a href="https://osg.cx/discord">Discord</a>.</p>
+                    </ol>
+                    <button class="aplicar" onclick="closeModal('modal2')">Fechar</button>
+                </div>
+            </dialog>
         </div>
     </main>
     <script src="script.js"></script>

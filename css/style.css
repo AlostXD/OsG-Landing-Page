@@ -29,6 +29,10 @@ main {
     gap: 100px;
 }
 
+.home, .sobre, .faca-parte, .patrocinios {
+    margin: 150px 0;
+}
+
 /* Navbar */
 
 .sidebar {
@@ -121,8 +125,11 @@ main {
     color: var(--laranja);
 }
 
-.home, .sobre, .faca-parte {
-    margin: 150px 0;
+.home-navbar {
+    display: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 /* Homepage */
@@ -220,16 +227,108 @@ main {
     color: blue;
 }
 
-#aplicar {
+.aplicar {
+    all: unset;
     background-color: var(--laranja);
     padding: 10px 20px;
     border-radius: 12px;
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-#aplicar:hover {
+.aplicar:hover {
     transform: scale(1.1);
+}
+
+/* Patrocínio */
+
+.patrocinios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.patrocinadores {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.patrocinadores li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+}
+
+.patrocinadores li a {
+    text-decoration: none;
+}
+
+.patreon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.patreon-item img {
+    width: 60%;
+}
+
+.patrocinios-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--bg2);
+    border-radius: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ser-patrocinador, .apoiar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.patreon-modal {
+    padding: 20px;
 }
