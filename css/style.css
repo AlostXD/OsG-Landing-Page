@@ -29,7 +29,7 @@ main {
     gap: 100px;
 }
 
-.home, .sobre, .faca-parte, .patrocinios {
+.home, .sobre, .faca-parte, .patrocinios, .servidores {
     margin: 150px 0;
 }
 
@@ -331,4 +331,130 @@ dialog {
 
 .patreon-modal {
     padding: 20px;
+}
+
+
+/* Servidores */
+
+.servidores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box-servers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box-server-left, .box-server-right {
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.box-server-left {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.box-server-left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box-server-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.servers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.servers button {
+    all: unset;
+    background-color: var(--laranja);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #fff !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.servers button:hover {
+    transform: scale(1.1);
+}
+
+.prio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.prio-text ul {
+    list-style: none;
+}
+
+.prio-text ul span {
+    font-weight: bold;
+    color: var(--laranja);
+}
+
+.euro-truck, .ark, .minecraft, .valheim {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--bg2);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.euro-truck-text, .ark-text, .minecraft-text, .valheim-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.euro-truck button, .ark button, .minecraft button, .valheim button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.euro-truck button:hover, .ark button:hover, .minecraft button:hover, .valheim button:hover {
+    transform: scale(1);
+}
+
+.euro-truck span, .ark span, .minecraft span, .valheim span {
+    color: #ee620c;
+    font-weight: bold;
+    font-size: 24px;
 }
