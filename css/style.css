@@ -31,6 +31,19 @@ main {
 
 .home, .sobre, .faca-parte, .patrocinios, .servidores, .equipe, .faq, .contatos {
     margin: 150px 0;
+    behavior: smooth;
+}
+
+.sobre-image img {
+    width: 50%;
+}
+
+.logo-sem-letras {
+    width: 20%;
+}
+
+.logo-navbar {
+    width: 100%;
 }
 
 /* Navbar */
@@ -38,9 +51,9 @@ main {
 .sidebar {
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     position: absolute;
     top: 0;
     left: 0;
@@ -48,6 +61,8 @@ main {
     background-color: #000;
     padding: 12px 16px;
     overflow: hidden;
+    transition: all 0.5s ease;
+    height: 100vh;
 }
 
 .openSide-content {
@@ -109,7 +124,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 50px;
     list-style: none;
 }
 
@@ -123,6 +138,9 @@ main {
 .sidebarItem:hover {
     scale: 1.4;
     color: var(--laranja);
+    border: 1px solid var(--laranja);
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .home-navbar {
@@ -144,7 +162,7 @@ main {
 
 .equipes-content {
     text-align: center;
-    width: 50%;
+    width: 30%;
     background-color: var(--bg2);
     padding: 12px 16px;
     border-radius: 12px;
@@ -271,6 +289,13 @@ main {
     padding: 20px;
     border-radius: 12px;
     width: 30%;
+    transition: all 0.5s ease;
+}
+
+.patrocinadores li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: var(--laranja);
 }
 
 .patrocinadores li a {
@@ -638,7 +663,7 @@ dialog {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
     width: 100%;
 }
 

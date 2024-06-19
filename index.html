@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Os Guerreiros</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Logo.png">
 </head>
 
 <body>
@@ -30,20 +31,19 @@
                     <button id="closeSide" class="sideButton" onclick="closeSide()">Fechar</button>
                 </div>
                 <ul class="sidebarList">
-                    <li><a href="#" class="sidebarItem">Home</a></li>
-                    <li><a href="#" class="sidebarItem">Sobre</a></li>
-                    <li><a href="#" class="sidebarItem">Estatuto</a></li>
-                    <li><a href="#" class="sidebarItem">Junte-se</a></li>
-                    <li><a href="#" class="sidebarItem">Patrocínio</a></li>
-                    <li><a href="#" class="sidebarItem">Servidor de Games</a></li>
-                    <li><a href="#" class="sidebarItem">Administração</a></li>
-                    <li><a href="#" class="sidebarItem">FAQ</a></li>
-                    <li><a href="#" class="sidebarItem">Contato</a></li>
+                    <li><a href="#home" class="sidebarItem">Home</a></li>
+                    <li><a href="#sobre" class="sidebarItem">Sobre</a></li>
+                    <li><a href="#faca-parte" class="sidebarItem">Faça parte</a></li>
+                    <li><a href="#patrocinios" class="sidebarItem">Patrocínio</a></li>
+                    <li><a href="#servidores" class="sidebarItem">Servidor de Games</a></li>
+                    <li><a href="#equipe" class="sidebarItem">Administração</a></li>
+                    <li><a href="#faq" class="sidebarItem">FAQ</a></li>
+                    <li><a href="#contatos" class="sidebarItem">Contato</a></li>
                 </ul>
-                <img src="img/Logo1.png" alt="Logo1">
+                <img src="img/Logo.png" alt="Logo1" class="logo-sem-letras logo-navbar">
             </nav>
         </div>
-        <div class="home">
+        <div class="home" id="home">
             <img src="img/Logo1.png" alt="Logo1">
             <div class="equipes-content">
                 <h2>Equipes da Twitch</h2>
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="sobre">
+        <div class="sobre" id="sobre">
             <div class="sobre-text">
                 <h2>Sobre os Guerreiros</h2>
                 <p>Nosso objetivo é estabelecer conexões entre criadores de conteúdo, espectadores e patrocinadores,
@@ -84,9 +84,9 @@
                 </p>
                 <h3>Equipe "Os Guerreiros"</h3>
             </div>
-            <div class="sobre-image"><img src="img/Logo1.png" alt="Logo"></div>
+            <div class="sobre-image"><img src="img/Logo.png" alt="Logo" class="logo-sem-letras"></div>
         </div>
-        <div class="faca-parte">
+        <div class="faca-parte" id="faca-parte">
             <div class="faca-parte-text">
                 <h2>Faça parte da equipe Os Guerreiros!</h2>
                 <p><strong>Você é apaixonado por jogos, adora compartilhar suas aventuras e quer levar sua paixão a um
@@ -113,8 +113,7 @@
             </div>
             <div class="faca-parte-image"><img src="img/Logo2.png" alt="Logo"></div>
         </div>
-        <!-- FILEPATH: /c:/Users/Administrator/Desktop/osguerreiros/OsG-Landing-Page/index.html -->
-        <div class="patrocinios">
+        <div class="patrocinios" id="patrocinios">
             <h2>Empresas que confiam no nosso projeto!</h2>
             <div class="patrocinadores" id="patron"></div>
             <div class="patrocinios-footer">
@@ -157,7 +156,7 @@
                 </div>
             </dialog>
         </div>
-        <div class="servidores">
+        <div class="servidores" id="servidores">
             <h1>Servidores de Games</h1>
             <h3>Oferecimento Host Havoc</h3>
             <div class="box-servers">
@@ -274,7 +273,7 @@
                 </div>
             </div>
         </div>
-        <div class="equipe">
+        <div class="equipe" id="equipe">
             <h1>Equipe Administrativa</h1>
             <div class="equipe-cards" id="headstaff">
 
@@ -352,11 +351,11 @@
                 </dialog>
             </div>
         </div>
-        <div class="faq">
+        <div class="faq" id="faq">
             <h1>F.A.Q</h1>
             <h3>Frequently Asked Questions</h3>
             <div class="faq-content">
-                <img src="img/Logo1.png" alt="Logo">
+                <img src="img/Logo.png" alt="Logo" class="logo-sem-letras">
                 <div class="faq-questions">
                     <li>
                         <div class="faq-questions-text">
@@ -485,7 +484,7 @@
                 </div>
             </div>
         </div>
-        <div class="contatos">
+        <div class="contatos" id="contatos">
             <h1>Contatos</h1>
 			<div class="contatos-box">
 				<div class="contatos-left">
